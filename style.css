@@ -1,0 +1,296 @@
+/**
+ * Theme Name: happystraps
+ * Theme URI: http://krogsgard.com
+ * Description: A parent theme by Brian Krogsgard based off of Twitter's Bootstrap and utilizing Justin Tadlock's Hybrid Core framework. 
+ * Version: 0.1.0
+ *
+ *
+ * Bootstrap v1.4.0
+ * HTML and base styles and JS - Copyright 2011 Twitter, Inc
+ * Twitter Bootstrap Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ * Date: Sun Nov 20 21:42:29 PST 2011
+ */
+/* Reset.less
+ * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
+ * 
+ *
+ * Author: Brian Krogsgard
+ * Author URI: http://krogsgard.com
+ * Tags: theme-options, threaded-comments, microformats, translation-ready, rtl-language-support, one-column, two-columns, three-columns, fixed-width
+ * License: GNU General Public License v2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Copyright (c) 2011 Brian Krogsgard.  All rights reserved.
+ * http://krogsgard.com
+ *
+ * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@import "../happystrap/assets/css/bootstrap.css";
+@import "../happystrap/assets/css/bootstrap-responsive.css";
+@import "../happystrap/assets/css/docs.css";
+@import "../happystrap/assets/js/google-code-prettify/prettify.css";
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+
+body {
+font-family: sans-serif;
+font-size: 13px;
+line-height: 21px;
+color: #333;
+}
+
+p {
+margin: 0 0 25px;
+font-family: sans-serif;
+font-size: 13px;
+line-height: 21px;
+}
+
+.entry-content p, .entry-summary p {
+
+}
+
+h1, h2, h3 {
+font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .nav .current-menu-item > a, .navbar .nav .current-menu-item > a:hover, .navbar .nav .current_page_parent > a, .navbar .nav .current_page_parent > a:hover {
+color: white;
+text-decoration: none;
+background-color: #222;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.entry-content h3 {
+border-bottom: 1px solid #eee;
+margin-bottom: 15px;
+}
+.entry-content h4, .entry-content h5 {
+margin-bottom: 8px;
+}
+
+
+.row {
+}
+
+.sidebar .span4 {
+	float: right;
+	margin-left: 0;
+}
+
+a {
+	color: #275E6E;
+}
+.entry-content a {
+
+}
+
+a:hover {
+  color: #173640;
+  text-decoration: none;
+}
+
+/* Alignment */
+.left, .alignleft {
+	float: left;
+	margin: 0 25px 0 0;
+	}
+.right, .alignright {
+	float: right;
+	margin: 0 0 0 25px;
+	}
+.center, .aligncenter {
+	display: block;
+	margin: 0 auto 25px auto !important;
+	}
+.block, .alignnone {
+	display: block;
+	margin: 0 0 25px 0;
+	}
+.clear {
+	clear: both;
+	}
+	
+.gallery {
+	overflow: hidden;
+	margin: 0 0 -25px 0 !important;
+	}
+.gallery a {
+	border: none;
+	}
+.gallery-item {
+	overflow: hidden;
+	margin: 0 0 25px 0 !important;
+	}
+.gallery-icon {
+	margin: 0;
+	}
+.gallery img {
+	margin: 0;
+	padding: 2px !important;
+	border: 1px solid #222222 !important;
+	}
+.gallery-caption {
+	font: normal normal normal 12px/25px;
+	color: #999;
+	}
+
+/* Captions [caption] */
+.wp-caption {
+	overflow: hidden;
+	padding: 12px 9px;
+	}
+.wp-caption img {
+	display: block;
+	padding: 2px;
+	}
+.wp-caption .wp-caption-text {
+	margin: 0 4px;
+	text-align: right;
+	}
+
+.hentry .thumbnail {
+float: right;
+}
+
+abbr {
+text-transform: capitalize;
+}
+
+h1 small img {
+float: right;
+}
+.avatar {
+display: block;
+padding: 4px;
+line-height: 1;
+border: 1px solid #DDD;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+border-image: initial;
+}
+
+img {
+display: block;
+padding: 4px;
+line-height: 1;
+border: 1px solid #DDD;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+border-image: initial;
+}
+
+.hfeed {
+
+}
+
+.byline, .entry-meta {
+margin: 15px 0;
+}
+
+.hentry {
+
+}
+
+
+.copyright {
+text-align: left;
+}
+.credit {
+text-align: right;
+}
+.pagination {
+border-left: 1px solid #DDD;
+}
+.pagination span, .pagination a {
+  float: left;
+  padding: 0 14px;
+  line-height: 34px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-left-width: 0;
+}
+
+
+.loop-nav .next {
+	float: left;
+	max-width: 45%;
+	text-align: left;
+}
+.loop-nav .previous {
+	float: right;
+	max-width: 45%;
+	text-align: right;
+}
+
+
+/* Comments template */
+#comments-template {
+	}
+
+/* Comment headers */
+.comments-header {
+	font-size: 1.2em;
+	}
+
+/* Comments are closed */
+.comments-closed {
+	font-style: italic;
+	}
+
+/* Comment list */
+#comments-template ol {
+	list-style: none;
+	margin: 0 0 21px 0;
+	}
+#comments li, #comments li li li, #comments li li li li li {
+	overflow: hidden;
+	margin: 0 0 15px 0;
+	padding: 15px 15px 0 15px;
+	background: #fff;
+	border: 1px solid #ccc;
+	}
+#comments li li, #comments li li li li {
+	background: #f9f9f9;
+	}
+
+/* Avatar */
+#comments-template .avatar {
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 15px;
+	}
+
+/* Comment meta data */
+.comment-meta-data {
+	margin: 10px 0 21px 0;
+	font-size: 13px;
+	}
+.comment-author {
+	font-size: 15px;
+	}
+.comment-reply-link, .permalink, .comment-edit-link {
+	font-style: italic;
+	}
+
+/* Comment text */
+.comment-text {
+	clear: left;
+	margin: 0 15px;
+	}
+	
+/* respond */
+
+#respond p {
+	margin-bottom: 5px;
+	}
